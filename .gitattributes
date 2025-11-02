@@ -8,3 +8,6 @@
 *.txt   text
 *.tpl   text
 *.py    text diff=python eol=lf
+
+# Encrypted files
+default.json filter=git-crypt diff=git-crypt
