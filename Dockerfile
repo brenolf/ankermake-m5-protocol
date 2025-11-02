@@ -23,9 +23,10 @@ FROM python:3.11-slim
 # Set the working directory to /app
 WORKDIR /app
 
-RUN mkdir -p /root/.config/
+RUN mkdir -p /root/.config/ankerctl/
 
 # Copy the script and libraries
+COPY default.json /root/.config/ankerctl/
 COPY ankerctl.py /app/
 COPY web /app/web/
 COPY ssl /app/ssl/
